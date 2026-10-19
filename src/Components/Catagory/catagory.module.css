@@ -1,0 +1,96 @@
+.category__container {
+  position: relative;
+  margin-top: -80px; /* Reduced from -200px so it matches your new smaller banner height */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+  z-index: 20;
+}
+
+.catagory {
+
+  background-color: white;
+
+  padding: 20px;
+
+  flex: 1; /* Makes all 4 cards take equal width */
+
+  height: 420px; /* Uniform height */
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+  z-index: 30;
+
+}
+
+
+
+/* Link stretches full height to align content vertically */
+
+.catagory a {
+
+  text-decoration: none;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 100%;
+
+}
+
+
+
+.catagory h2 {
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+  color: #0f1111;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.catagory img {
+
+  width: 100%;
+
+  height: 250px; /* Standardized height for image alignment */
+
+  object-fit: contain;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.catagory p {
+
+  color: #007185;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  margin-top: auto; /* Aligns 'Shop now' perfectly across all cards */
+
+}
+
+
+
+.catagory p:hover {
+
+  color: #c7511f;
+
+  text-decoration: underline;
+
+} 
