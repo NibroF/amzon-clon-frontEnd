@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import LayOut from '../../Components/Layout/LayOut';
 import { DataContext } from '../../Components/DataProvider/DataProvider';
-import ProductCard from '../../Components/product/ProductCard';
+import ProductCard from '../../Components/Product/ProductCard';
 import { Link } from 'react-router-dom';
 import CurrencyFormat from '../../Components/CurrencyFormat/CurrencyFormat';
 import classes from "./cart.module.css";
