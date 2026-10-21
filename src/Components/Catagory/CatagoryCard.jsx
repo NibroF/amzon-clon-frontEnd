@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CatagoryCard = ({ data }) => {
   return (
     <div className={classes.catagory}>
-      <Link to={`/catagory/${data.name}`}>
+      <Link to={`/categories/${data.name}`}>
         <h2>{data?.title}</h2>
         <img src={data.imgLink} alt={data.title} />
         <p>Shop now</p>
