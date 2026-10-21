@@ -10,10 +10,10 @@ import Loader from '../../Components/Layout/Loading/Loader'
 const Results = () => {
     const [results,setResults]=useState([])
     const [isLoading,setIsLoading]=useState(false)
-       const {catagoryName} = useParams()
+       const {categoryName} = useParams()
     useEffect(()=>{
         setIsLoading(true)
-        axios.get(`${productUrl}/products/category/${catagoryName}`)
+        axios.get(`${productUrl}/products/category/${categoryName}`)
         .then((res)=>{
             setResults(res.data)
             setIsLoading(false)
@@ -21,7 +21,7 @@ const Results = () => {
             console.log(err)
             setIsLoading(false)
         })
-    },[catagoryName])
+    },[categoryName])
         
 
     
@@ -31,7 +31,7 @@ const Results = () => {
 
         {isLoading?(<Loader/>):(  <section>      
         <h1 style={{padding:"30px"}}>Results</h1>
-        <p style={{padding:"30px"}}>Catagory/{catagoryName}</p>
+        <p style={{padding:"30px"}}>Category/{categoryName}</p>
         <hr/>
         <div className={classes.product_container}>
             {
